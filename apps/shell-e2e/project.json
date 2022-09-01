@@ -1,18 +1,18 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/budget-star-e2e/src",
+  "sourceRoot": "apps/shell-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/budget-star-e2e/cypress.config.ts",
-        "devServerTarget": "budget-star:serve:development",
+        "cypressConfig": "apps/shell-e2e/cypress.config.ts",
+        "devServerTarget": "shell:serve:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "budget-star:serve:production"
+          "devServerTarget": "shell:serve:production"
         }
       }
     },
@@ -20,10 +20,10 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/budget-star-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/shell-e2e/**/*.{js,ts}"]
       }
     }
   },
   "tags": [],
-  "implicitDependencies": ["budget-star"]
+  "implicitDependencies": ["shell"]
 }

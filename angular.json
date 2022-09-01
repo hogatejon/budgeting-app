@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "budget-star": "apps/budget-star",
-    "budget-star-e2e": "apps/budget-star-e2e"
+    "shell": "apps/shell",
+    "shell-e2e": "apps/shell-e2e"
   }
 }
