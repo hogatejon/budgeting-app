@@ -38,6 +38,10 @@
       "linter": "eslint",
       "unitTestRunner": "jest"
     },
+    "@nrwl/schematics:component": {
+      "prefix": "app",
+      "styleext": "scss"
+    },
     "@nrwl/angular:component": {
       "style": "scss"
     }
