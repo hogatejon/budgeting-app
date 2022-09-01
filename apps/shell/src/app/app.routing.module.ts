@@ -1,8 +1,12 @@
 import { NgModule } from "@angular/core";
 import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
+import { FeatureSetupComponent } from "@budget-smudget/setup";
 
 const routes: Routes = [
-
+  {
+    path: '',
+    component: FeatureSetupComponent
+  }
 ];
 
 @NgModule({
