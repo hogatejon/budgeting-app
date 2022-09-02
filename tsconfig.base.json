@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@budget-smudget/header": ["libs/header/feature-header/src/index.ts"],
       "@budget-smudget/setup": ["libs/setup/feature-setup/src/index.ts"]
     }
   },
