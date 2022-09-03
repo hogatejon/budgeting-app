@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/trackers/feature-trackers/src",
+  "prefix": "budget-smudget",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/trackers/feature-trackers"],
+      "options": {
+        "project": "libs/trackers/feature-trackers/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/trackers/feature-trackers/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/trackers/feature-trackers/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/trackers/feature-trackers"],
+      "options": {
+        "jestConfig": "libs/trackers/feature-trackers/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/trackers/feature-trackers/**/*.ts",
+          "libs/trackers/feature-trackers/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -19,7 +19,10 @@
       "@budget-smudget/home/feature-home": [
         "libs/home/feature-home/src/index.ts"
       ],
-      "@budget-smudget/setup": ["libs/setup/feature-setup/src/index.ts"]
+      "@budget-smudget/setup": ["libs/setup/feature-setup/src/index.ts"],
+      "@budget-smudget/trackers/feature-trackers": [
+        "libs/trackers/feature-trackers/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

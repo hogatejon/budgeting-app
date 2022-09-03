@@ -6,6 +6,7 @@
     "home-feature-home": "libs/home/feature-home",
     "setup-feature-setup": "libs/setup/feature-setup",
     "shell": "apps/shell",
-    "shell-e2e": "apps/shell-e2e"
+    "shell-e2e": "apps/shell-e2e",
+    "trackers-feature-trackers": "libs/trackers/feature-trackers"
   }
 }
