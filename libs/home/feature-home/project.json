@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/home/feature-home/src",
+  "prefix": "budget-smudget",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/home/feature-home"],
+      "options": {
+        "project": "libs/home/feature-home/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/home/feature-home/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/home/feature-home/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/home/feature-home"],
+      "options": {
+        "jestConfig": "libs/home/feature-home/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/home/feature-home/**/*.ts",
+          "libs/home/feature-home/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
