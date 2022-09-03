@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FeatureDashboardComponent } from './feature-dashboard/feature-dashboard.component';
+import { FeatureDashboardComponent } from './feature-dashboard.component';
 
 @NgModule({
   imports: [CommonModule],

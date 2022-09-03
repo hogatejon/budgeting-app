@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FeatureHomeComponent } from './feature-home/feature-home.component';
+import { FeatureHomeComponent } from './feature-home.component';
 
 @NgModule({
   imports: [CommonModule],
