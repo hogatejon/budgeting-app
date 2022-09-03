@@ -1,1 +1,10 @@
-<p>feature-header works!</p>
+<header>
+  <a href="/" class="logo">Budget Logo</a>
+  <div class="header-right">
+    <a class="active" [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/setup']">Setup</a>
+    <a [routerLink]="['/trackers']">Trackers</a>
+    <a [routerLink]="['/transactions']">Transactions</a>
+    <a [routerLink]="['/dashboard']">Dashboard</a>
+  </div>
+</header>

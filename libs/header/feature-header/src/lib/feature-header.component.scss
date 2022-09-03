@@ -1,0 +1,35 @@
+header {
+  overflow: hidden;
+  background-color: #d7d7d7;
+  height: 3.125rem;
+  padding: 1rem 0.5rem;
+
+  a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    border-radius: 0.25rem;
+
+    &.active {
+      background-color: rgb(85, 183, 182);
+      color: white;
+    }
+
+    &:hover {
+      background-color: rgb(110, 110, 110);
+      color: black;
+    }
+  }
+}
+
+.header-right {
+  float: right;
+}
+
+
+
+

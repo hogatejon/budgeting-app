@@ -4,7 +4,22 @@ import { FeatureSetupComponent } from "@budget-smudget/setup";
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
+    component: FeatureSetupComponent
+  }, {
+    path: 'setup',
+    component: FeatureSetupComponent
+  }, {
+    path: 'trackers',
+    component: FeatureSetupComponent
+  }, {
+    path: 'transactions',
+    component: FeatureSetupComponent
+  }, {
+    path: 'dashboards',
+    component: FeatureSetupComponent
+  }, {
+    path: '**',
     component: FeatureSetupComponent
   }
 ];
