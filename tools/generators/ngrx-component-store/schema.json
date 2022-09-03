@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "ngrx-component-store",
+  "type": "object",
+  "properties": {
+    "componentName": {
+      "type": "string",
+      "description": "Component Name (Component that will talk with component store)",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "projectName": {
+      "type": "string",
+      "description": "Name of library to put the component store",
+      "$default": {
+        "$source": "projectName"
+      }
+    }
+  },
+  "required": ["componentName", "projectName"]
+}
