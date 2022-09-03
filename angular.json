@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "dashboard-feature-dashboard": "libs/dashboard/feature-dashboard",
     "header-feature-header": "libs/header/feature-header",
     "home-feature-home": "libs/home/feature-home",
     "setup-feature-setup": "libs/setup/feature-setup",

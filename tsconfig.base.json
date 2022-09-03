@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@budget-smudget/dashboard/feature-dashboard": [
+        "libs/dashboard/feature-dashboard/src/index.ts"
+      ],
       "@budget-smudget/header": ["libs/header/feature-header/src/index.ts"],
       "@budget-smudget/home/feature-home": [
         "libs/home/feature-home/src/index.ts"
