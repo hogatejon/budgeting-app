@@ -22,6 +22,9 @@
       "@budget-smudget/setup": ["libs/setup/feature-setup/src/index.ts"],
       "@budget-smudget/trackers/feature-trackers": [
         "libs/trackers/feature-trackers/src/index.ts"
+      ],
+      "@budget-smudget/transactions/feature-transactions": [
+        "libs/transactions/feature-transactions/src/index.ts"
       ]
     }
   },

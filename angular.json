@@ -7,6 +7,7 @@
     "setup-feature-setup": "libs/setup/feature-setup",
     "shell": "apps/shell",
     "shell-e2e": "apps/shell-e2e",
-    "trackers-feature-trackers": "libs/trackers/feature-trackers"
+    "trackers-feature-trackers": "libs/trackers/feature-trackers",
+    "transactions-feature-transactions": "libs/transactions/feature-transactions"
   }
 }
