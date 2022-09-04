@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/setup/ui-setup-form/src",
+  "prefix": "ui",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/setup/ui-setup-form"],
+      "options": {
+        "jestConfig": "libs/setup/ui-setup-form/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/setup/ui-setup-form/**/*.ts",
+          "libs/setup/ui-setup-form/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["ui"]
+}

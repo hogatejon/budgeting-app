@@ -1,7 +1,6 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/dashboard/feature-dashboard/src",
-  "prefix": "budget-smudget",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",

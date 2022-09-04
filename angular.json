@@ -6,6 +6,7 @@
     "header-feature-header": "libs/header/feature-header",
     "home-feature-home": "libs/home/feature-home",
     "setup-feature-setup": "libs/setup/feature-setup",
+    "setup-ui-setup-form": "libs/setup/ui-setup-form",
     "shell": "apps/shell",
     "shell-e2e": "apps/shell-e2e",
     "trackers-feature-trackers": "libs/trackers/feature-trackers",
