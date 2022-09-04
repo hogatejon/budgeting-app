@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/setup/util-setup-types/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/setup/util-setup-types/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/setup/util-setup-types"],
+      "options": {
+        "jestConfig": "libs/setup/util-setup-types/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["util"]
+}

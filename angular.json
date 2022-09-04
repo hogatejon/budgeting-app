@@ -8,6 +8,7 @@
     "setup-data-access-setup": "libs/setup/data-access-setup",
     "setup-feature-setup": "libs/setup/feature-setup",
     "setup-ui-setup-form": "libs/setup/ui-setup-form",
+    "setup-util-setup-types": "libs/setup/util-setup-types",
     "shell": "apps/shell",
     "shell-e2e": "apps/shell-e2e",
     "trackers-feature-trackers": "libs/trackers/feature-trackers",
