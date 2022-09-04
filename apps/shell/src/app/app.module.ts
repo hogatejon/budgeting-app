@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { DashboardFeatureDashboardModule } from '@budget-smudget/dashboard/feature-dashboard';
 import { HeaderFeatureHeaderModule } from '@budget-smudget/header';
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app.routing.module';
   imports: [
     AppRoutingModule,
     BrowserModule,
+    BrowserAnimationsModule,
     HeaderFeatureHeaderModule,
     HomeFeatureHomeModule,
     TrackersFeatureTrackersModule,
