@@ -1,6 +1,7 @@
 @import "primeicons/primeicons.css";
 @import "primeng/resources/primeng.min.css";
 @import "primeng/resources/themes/saga-purple/theme.css";
+@import "primeflex/primeflex.css";
 
 /* You can add global styles to this file, and also import other style files */
 body {
@@ -11,4 +12,17 @@ html {
   font-size: 16px;
   height: 100vh;
   width: 100vw;
+}
+
+.field-label {
+  display: block;
+  font-weight: 600;
+  padding-bottom: 3px;
+  padding-left: 10px;
+}
+
+.field-required {
+  &::before {
+    content: "* "
+  }
 }

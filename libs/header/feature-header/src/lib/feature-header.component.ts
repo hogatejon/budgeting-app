@@ -10,4 +10,8 @@ export class FeatureHeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  onClick(event: MouseEvent) {
+    console.log(event);
+  }
 }

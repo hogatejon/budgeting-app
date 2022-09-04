@@ -1,4 +1,10 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+
+interface IncomeForm {
+  category: FormControl<string>;
+  amount: FormControl<number>;
+};
 
 @Component({
   selector: 'ui-setup-form',
@@ -6,6 +12,15 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   styleUrls: ['./ui-setup-form.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UiSetupFormComponent {
+export class UiSetupFormComponent implements OnInit {
+  incomeData = [
+    { category: 'Paycheck', value: 10000 }
+  ];
 
+  constructor() {
+  }
+
+  ngOnInit() {
+
+  }
 }
