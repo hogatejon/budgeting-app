@@ -23,6 +23,9 @@
         "libs/home/feature-home/src/index.ts"
       ],
       "@budget-smudget/setup": ["libs/setup/feature-setup/src/index.ts"],
+      "@budget-smudget/setup/data-access-setup": [
+        "libs/setup/data-access-setup/src/index.ts"
+      ],
       "@budget-smudget/setup/ui-setup-form": [
         "libs/setup/ui-setup-form/src/index.ts"
       ],
