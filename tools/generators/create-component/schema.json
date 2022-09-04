@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "create-component",
+  "type": "object",
+  "properties": {
+    "componentName": {
+      "type": "string",
+      "description": "Component Name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "projectName": {
+      "type": "string",
+      "description": "Name of library where feature lib will live",
+      "$default": {
+        "$source": "projectName"
+      }
+    }
+  },
+  "required": ["componentName", "projectName"]
+}
