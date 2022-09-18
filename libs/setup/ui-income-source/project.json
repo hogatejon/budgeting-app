@@ -1,13 +1,13 @@
 {
   "projectType": "library",
-  "sourceRoot": "libs/setup/ui-setup-form/src",
+  "sourceRoot": "libs/setup/ui-income-sources/src",
   "prefix": "ui",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/setup/ui-setup-form"],
+      "outputs": ["coverage/libs/setup/ui-income-sources"],
       "options": {
-        "jestConfig": "libs/setup/ui-setup-form/jest.config.ts",
+        "jestConfig": "libs/setup/ui-income-sources/jest.config.ts",
         "passWithNoTests": true
       }
     },
@@ -15,8 +15,8 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "libs/setup/ui-setup-form/**/*.ts",
-          "libs/setup/ui-setup-form/**/*.html"
+          "libs/setup/ui-income-sources/**/*.ts",
+          "libs/setup/ui-income-sources/**/*.html"
         ]
       }
     }

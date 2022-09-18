@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { FeatureSetupStore } from './feature-setup.store';
 
 @Component({
   selector: 'feature-setup',
@@ -7,7 +9,15 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FeatureSetupComponent implements OnInit {
-  constructor() {}
+  viewModel$ = this.componentStore.viewModel$;
+  setupForm = this.fb.group({
+    incomeEntries: this.fb.array([
+      this.fb.group({})
+    ])
+  });
+
+  constructor(private readonly componentStore: FeatureSetupStore,
+              private readonly fb: FormBuilder) {}
 
   ngOnInit(): void {}
 }

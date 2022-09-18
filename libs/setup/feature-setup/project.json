@@ -3,22 +3,6 @@
   "sourceRoot": "libs/setup/feature-setup/src",
   "prefix": "feature",
   "targets": {
-    "build": {
-      "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/setup/feature-setup"],
-      "options": {
-        "project": "libs/setup/feature-setup/ng-package.json"
-      },
-      "configurations": {
-        "production": {
-          "tsConfig": "libs/setup/feature-setup/tsconfig.lib.prod.json"
-        },
-        "development": {
-          "tsConfig": "libs/setup/feature-setup/tsconfig.lib.json"
-        }
-      },
-      "defaultConfiguration": "production"
-    },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/setup/feature-setup"],

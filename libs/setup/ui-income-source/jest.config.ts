@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'setup-ui-setup-form',
+  displayName: 'setup-ui-income-sources',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/setup/ui-setup-form',
+  coverageDirectory: '../../../coverage/libs/setup/ui-income-sources',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

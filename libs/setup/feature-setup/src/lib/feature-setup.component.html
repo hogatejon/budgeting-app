@@ -1,6 +1,18 @@
-<p>
-  This section is where you will set up currency, categories, goals and budget.
-  Once this section is filled out, you may use the Trackers and Transactions tabs.
-</p>
+<ng-container *ngIf="viewModel$ | async as view">
+  <p>
+    This section is where you will set up currency, categories, goals and budget.
+    Once this section is filled out, you may use the Trackers and Transactions tabs.
+  </p>
 
-<ui-setup-form></ui-setup-form>
+  <h1>Monthly Budget Setup</h1>
+
+<p-panel header="Income Goals">
+  <p>This is where you supply expected montly income sources</p>
+
+  <ng-container>
+    <ui-income-source></ui-income-source>
+  </ng-container>
+</p-panel>
+
+
+</ng-container>

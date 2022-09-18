@@ -26,8 +26,8 @@
       "@budget-smudget/setup/data-access-setup": [
         "libs/setup/data-access-setup/src/index.ts"
       ],
-      "@budget-smudget/setup/ui-setup-form": [
-        "libs/setup/ui-setup-form/src/index.ts"
+      "@budget-smudget/setup/ui-income-source": [
+        "libs/setup/ui-income-source/src/index.ts"
       ],
       "@budget-smudget/setup/util-setup-types": [
         "libs/setup/util-setup-types/src/index.ts"
