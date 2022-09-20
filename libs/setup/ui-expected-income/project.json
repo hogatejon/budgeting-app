@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/setup/ui-expected-income/src",
+  "prefix": "ui",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/setup/ui-expected-income"],
+      "options": {
+        "jestConfig": "libs/setup/ui-expected-income/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/setup/ui-expected-income/**/*.ts",
+          "libs/setup/ui-expected-income/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["ui"]
+}

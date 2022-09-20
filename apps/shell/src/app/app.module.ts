@@ -16,6 +16,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SetupFeatureSetupModule } from '@budget-smudget/setup';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TransactionsFeatureTransactionsModule,
     DashboardFeatureDashboardModule,
     RouterModule,
+    SetupFeatureSetupModule,
     StoreModule.forRoot(
       {},
       {

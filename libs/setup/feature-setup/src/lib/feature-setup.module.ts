@@ -2,14 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FeatureSetupComponent } from './feature-setup.component';
 import { PanelModule } from 'primeng/panel';
-import { UiIncomeSourceModule } from '@budget-smudget/setup/ui-income-source';
 import { FeatureSetupStore } from './feature-setup.store';
+import { ButtonModule } from 'primeng/button'
+import { StepsModule } from 'primeng/steps'
+import { UiExpectedIncomeModule } from '@budget-smudget/setup/ui-expected-income';
 
 @NgModule({
   imports: [
+    ButtonModule,
     CommonModule,
     PanelModule,
-    UiIncomeSourceModule
+    StepsModule,
+    UiExpectedIncomeModule
   ],
   declarations: [FeatureSetupComponent],
   exports: [FeatureSetupComponent],

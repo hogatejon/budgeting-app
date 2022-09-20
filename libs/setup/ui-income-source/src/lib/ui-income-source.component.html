@@ -1,1 +1,24 @@
-<p>ui-income-source works!</p>
+<form [formGroup]="incomeGroup" class="grid">
+  <div class="col-5 md:col-5 pr-3">
+    <label class="field-label field-required">Category</label>
+    <input pInputText
+           formControlName="category"
+           type="text"
+           class="w-full">
+  </div>
+  <div class="col-5 md:col-5">
+    <label class="field-label field-required">Expected Amount</label>
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon">$</span>
+      <input pInputText
+             formControlName="amount"
+             type="text"
+             class="w-full pr-3">
+    </div>
+  </div>
+  <button *ngIf="showDelete"
+          pButton
+          class="col-2 md:col-2 align-self-end mb-2"
+          icon="pi pi-trash"
+          (click)="removeSource()"></button>
+</form>

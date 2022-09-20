@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'ui-income-source',
@@ -6,8 +7,13 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   styleUrls: ['./ui-income-source.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UiIncomeSourceComponent implements OnInit {
-  constructor() {}
+export class UiIncomeSourceComponent {
+  @Input() index!: number;
+  @Input() incomeGroup!: FormGroup;
+  @Input() showDelete = false;
+  @Output() remove = new EventEmitter<number>();
 
-  ngOnInit(): void {}
+  removeSource() {
+    this.remove.emit(this.index);
+  }
 }

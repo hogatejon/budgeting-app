@@ -1,0 +1,15 @@
+<p-panel header="Expected Income" class="mt-3">
+  <p>This is where you supply expected monthly income sources</p>
+  <ng-container *ngFor="let source of incomeGroup.controls; let i=index">
+    <ui-income-source [index]="i"
+                      [incomeGroup]="source"
+                      [showDelete]="incomeGroup.controls.length > 1"
+                      (remove)="removeIncomeSource($event)"></ui-income-source>
+  </ng-container>
+  <button pButton
+          icon="pi pi-plus"
+          label="Add"
+          class="mr-2 ml-auto p-button-text"
+          type="button"
+          (click)="addIncomeSource()"></button>
+</p-panel>

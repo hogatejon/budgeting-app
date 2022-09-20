@@ -4,15 +4,14 @@
     Once this section is filled out, you may use the Trackers and Transactions tabs.
   </p>
 
-  <h1>Monthly Budget Setup</h1>
+  <div class="flex align-items-center justify-content-between">
+    <h1>Monthly Budget Setup</h1>
+    <span class="text-lg" [ngClass]="{ 'green': totalBudget > 0 }">Total Income: ${{ totalBudget }}</span>
+  </div>
 
-<p-panel header="Income Goals">
-  <p>This is where you supply expected montly income sources</p>
+  <p-steps [model]="setupSteps"
+           [readonly]="false"
+           [activeIndex]="stepIndex"></p-steps>
 
-  <ng-container>
-    <ui-income-source></ui-income-source>
-  </ng-container>
-</p-panel>
-
-
+  <ui-expected-income [incomeGroup]="setupForm.get('incomeEntries')"></ui-expected-income>
 </ng-container>

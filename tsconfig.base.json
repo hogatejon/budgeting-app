@@ -26,11 +26,17 @@
       "@budget-smudget/setup/data-access-setup": [
         "libs/setup/data-access-setup/src/index.ts"
       ],
+      "@budget-smudget/setup/ui-expected-income": [
+        "libs/setup/ui-expected-income/src/index.ts"
+      ],
       "@budget-smudget/setup/ui-income-source": [
         "libs/setup/ui-income-source/src/index.ts"
       ],
       "@budget-smudget/setup/util-setup-types": [
         "libs/setup/util-setup-types/src/index.ts"
+      ],
+      "@budget-smudget/shared-libs/util-js-helpers": [
+        "libs/shared-libs/util-js-helpers/src/index.ts"
       ],
       "@budget-smudget/trackers/feature-trackers": [
         "libs/trackers/feature-trackers/src/index.ts"
